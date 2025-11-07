@@ -6,7 +6,7 @@ long long C(int n, int k) {
 }
 
 int main(void) {
-    int N = 15; // cuidado: crece muy lento por el costo exponencial
+    int N = 15; 
     for (int i = 0; i < N; ++i) {
         for (int k = 0; k <= i; ++k)
             printf("%lld ", C(i, k));
