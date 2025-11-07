@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-    int N = 30;
+    int N = 0;
+    puts("Ingresa el número: ");
+    scanf("%d", &N);
     long long dp[31][31] = {0}; 
     for (int n = 0; n <= N; ++n) {
         dp[n][0] = dp[n][n] = 1;

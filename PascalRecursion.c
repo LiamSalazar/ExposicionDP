@@ -6,7 +6,9 @@ long long C(int n, int k) {
 }
 
 int main(void) {
-    int N = 15; 
+    int N = 0;
+    puts("Ingresa el número: ");
+    scanf("%d", &N); 
     for (int i = 0; i < N; ++i) {
         for (int k = 0; k <= i; ++k)
             printf("%lld ", C(i, k));
